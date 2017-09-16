@@ -1,15 +1,23 @@
 var assert = require('assert');
 
 function Queue(){
-    
+    this._arr = [];
 }
 
 Queue.prototype.enqueue = function(item){
-    
+    this._arr.push(item);
 };
 
 Queue.prototype.dequeue = function(){
-    return 'a';
+    var obj;
+    if (this._arr.length > 0){
+        obj = this._arr[0];        
+        this._arr.shift();
+        return obj;
+    }else{
+        console.log('no item in queue!');
+    }
+    // return 'a';
 };
 
 
