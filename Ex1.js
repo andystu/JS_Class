@@ -114,3 +114,8 @@ function findNumOccurances2(str, strSearch){
   console.log(findNumOccurances('Hello World!', 'l'));
   console.log(findNumOccurances2('Hello World, World','World'));
 })();
+arr = [1,2,3,4,5]
+arr.map(function(x){return x*x;})
+arr.map(x => x*x )
+arr.map(x=> console.log(x) )
+arr.forEach(x=> console.log(x))
