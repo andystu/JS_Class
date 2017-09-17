@@ -31,7 +31,7 @@ function hasRightParentheses(str){
             if(str[i]=='('){
                 stk.push('(');
             }else if(str[i]==')'){
-                if(stk._arr.length > 0){
+                if(stk.isEmpty() > 0){
                     stk.pop();
                 }else{
                     // console.log('status -> false');
